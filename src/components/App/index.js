@@ -1,6 +1,9 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react"; //imports in order of importance 1. npm module
+//our libraries or components
+import Increment from "../Increment"; //..means go up a folder.  Imports index by default
+//styling things
+import logo from "./logo.svg";
+import "./App.css";
 
 class App extends Component {
   render() {
@@ -17,8 +20,10 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            Press the Button!
           </a>
+
+          <Increment />
         </header>
       </div>
     );
